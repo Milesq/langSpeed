@@ -26,5 +26,10 @@
         "dir": "python",
         "run": "python Main.py",
         "main": "Main.py"
+    },
+    {
+        "dir": "js",
+        "run": "node main.js",
+        "main": "main.js"
     }
 ]
