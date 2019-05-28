@@ -9,5 +9,10 @@
         "dir": "php",
         "run": "php main.php",
         "main": "main.php"
+    },
+    {
+        "dir": "python",
+        "run": "python Main.py",
+        "main": "Main.py"
     }
 ]
