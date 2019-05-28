@@ -1,7 +1,7 @@
 [
     {
         "dir": "c",
-        "compile": "gcc ./main.c isFirst.h",
+        "compile": "gcc ./main.c isFirst.h -o3",
         "run": "a.exe",
         "main": "main.c"
     },
@@ -12,7 +12,7 @@
     },
     {
         "dir": "cpp",
-        "compile": "g++ main.cpp isFirst.hpp",
+        "compile": "g++ main.cpp isFirst.hpp -O3 -std=c++17",
         "run": "a.exe",
         "main": "main.cpp"
     },
