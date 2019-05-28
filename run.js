@@ -7,6 +7,7 @@ module.exports = async config => {
     const ret = {};
 
     const result = config.map(async ({ name, run, dir }) => {
+        console.log(`Launch ${name}`);
         let time = new Date().getTime();
         const { stderr } = await exec(run, {
             cwd: `.tmp/${dir}`
