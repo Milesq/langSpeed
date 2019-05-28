@@ -1,3 +1,4 @@
+const fs = require('fs');
 const languages = require('./config.json');
 const transpile = require('./transpile');
 const compile = require('./compile');
@@ -25,5 +26,7 @@ const config = languages.map(userConfig => {
   await compile(config);
 
   console.log('Run');
-  await run(config);
+  const times = await run(config);
+
+  fs.writeFileSync('results.json', JSON.stringify(times, null, 2));
 })();
