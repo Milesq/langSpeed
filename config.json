@@ -11,6 +11,12 @@
         "main": "main.php"
     },
     {
+        "dir": "cpp",
+        "compile": "g++ main.cpp isFirst.hpp",
+        "run": "a.exe",
+        "main": "main.cpp"
+    },
+    {
         "dir": "python",
         "run": "python Main.py",
         "main": "Main.py"
