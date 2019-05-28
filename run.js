@@ -6,7 +6,7 @@ const fs = require('fs');
 module.exports = async config => {
     const ret = {};
 
-    const result = config.map(async ({ name, run, dir }) => {
+    for(let { name, run, dir } of config) {
         console.log(`Launch ${name}`);
         let time = new Date().getTime();
         const { stderr } = await exec(run, {
@@ -19,8 +19,7 @@ module.exports = async config => {
         }
 
         ret[name] = time;
-    });
+    }
 
-    await Promise.all(result);
     return ret;
 };
