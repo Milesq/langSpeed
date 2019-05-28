@@ -10,9 +10,11 @@ languages.forEach(({ run, dir, main }) => {
   }
 });
 
+const iters = process.argv[2] || 50000;
+
 const config = languages.map(userConfig => {
   return {
-    iters: require('./iters.json').iters,
+    iters,
     name: userConfig.dir + '-time',
     ...userConfig
   }
