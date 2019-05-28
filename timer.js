@@ -17,7 +17,7 @@ const config = languages.map(userConfig => {
 });
 
 transpile(config).then(() => {
-  // compile(config);
+  compile(config);
 });
 
 // exec(`${config.run} > ../${config.name}`, {
