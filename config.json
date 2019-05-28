@@ -7,7 +7,7 @@
     },
     {
         "dir": "cpp",
-        "compile": "g++ main.cpp isFirst.hpp -O3 -std=c++17",
+        "compile": "g++ main.cpp isFirst.hpp -std=c++17",
         "run": "a.exe",
         "main": "main.cpp"
     },
