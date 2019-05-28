@@ -18,7 +18,12 @@ const config = languages.map(userConfig => {
 });
 
 (async () => {
+  console.log('Generating files...');
   await transpile(config);
+
+  console.log('Compiling...');
   await compile(config);
+
+  console.log('Run');
   await run(config);
 })();

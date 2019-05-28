@@ -2,8 +2,8 @@ const { promisify } = require('util');
 let { exec } = require('child_process');
 exec = promisify(exec);
 
-module.exports = config => {
-    config.forEach(async ({ dir, name, compile }) => {
+module.exports = async config => {
+    const result = config.map(async ({ dir, name, compile }) => {
         if(compile === undefined) return;
 
         try {
@@ -17,4 +17,6 @@ module.exports = config => {
             console.log(err);
         }
     });
+
+    await Promise.all(result);
 };

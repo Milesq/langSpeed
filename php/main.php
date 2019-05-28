@@ -5,4 +5,4 @@ for ($i=__ITERS__;$i>1;--$i) {
     $is_first($i);
 }
 
-echo 'end';
+echo 'php end';

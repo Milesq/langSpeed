@@ -4,7 +4,7 @@
         "iters": "50",
         "dir": "c",
         "compile": "gcc ./main.c isFirst.h",
-        "run": "a",
+        "run": "a.exe",
         "main": "main.c"
     },
     {
