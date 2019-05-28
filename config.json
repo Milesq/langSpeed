@@ -1,0 +1,15 @@
+[
+    {
+        "name": "c-50",
+        "iters": "50",
+        "dir": "c",
+        "compile": "gcc ./main.c isFirst.h",
+        "run": "a",
+        "main": "main.c"
+    },
+    {
+        "dir": "php",
+        "run": "php main.php",
+        "main": "main.php"
+    }
+]
