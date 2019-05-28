@@ -13,3 +13,5 @@ The Timer.js file gets the configuration from the config.json file and tests the
 - Js
 - PHP 7
 - Python 3
+- Kotlin
+- Rust
