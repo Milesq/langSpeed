@@ -12,7 +12,7 @@ languages.forEach(({ run, dir, main }) => {
 
 const config = languages.map(userConfig => {
   return {
-    iters: '20000',
+    iters: '50000',
     name: userConfig.dir + '-time',
     ...userConfig
   }
