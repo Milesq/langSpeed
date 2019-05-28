@@ -1,6 +1,7 @@
 const languages = require('./config.json');
 const transpile = require('./transpile');
 const compile = require('./compile');
+const run = require('./run');
 
 languages.forEach(({ run, dir, main }) => {
   if(run === undefined || dir === undefined || main === undefined) {
@@ -16,10 +17,8 @@ const config = languages.map(userConfig => {
   }
 });
 
-transpile(config).then(() => {
-  compile(config);
-});
-
-// exec(`${config.run} > ../${config.name}`, {
-//   cwd: config.dir
-// });
+(async () => {
+  await transpile(config);
+  await compile(config);
+  await run(config);
+})();

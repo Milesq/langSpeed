@@ -1,20 +1,18 @@
 const { promisify } = require('util');
 let { exec } = require('child_process');
-// exec = promisify(exec);
+exec = promisify(exec);
 
 module.exports = config => {
     config.forEach(async ({ dir, name, compile }) => {
         if(compile === undefined) return;
-        exec('gcc main.c isFirst.h', {
-            cwd: '.tmp/c'
-        });
 
         try {
             console.log('Compiling ' + name);
             await exec(compile, {
-                cwd: `./tmp/${dir}/`
+                cwd: `.tmp/${dir}/`
             });
             console.log('Compilation end');
+            console.log('');
         } catch(err) {
             console.log(err);
         }
