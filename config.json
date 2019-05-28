@@ -1,7 +1,7 @@
 [
     {
         "dir": "c",
-        "compile": "gcc ./main.c isFirst.h -o3",
+        "compile": "gcc ./main.c isFirst.h",
         "run": "a.exe",
         "main": "main.c"
     },
@@ -31,5 +31,11 @@
         "dir": "js",
         "run": "node main.js",
         "main": "main.js"
+    },
+    {
+        "dir": "kotlin",
+        "compile": "kotlinc Main.kt First.kt",
+        "run": "java MainKt",
+        "main": "Main.kt"
     }
 ]
