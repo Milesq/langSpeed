@@ -17,6 +17,12 @@
         "main": "main.cpp"
     },
     {
+        "dir": "java",
+        "compile": "javac Main.java",
+        "run": "java Main",
+        "main": "Main.java"
+    },
+    {
         "dir": "python",
         "run": "python Main.py",
         "main": "Main.py"
