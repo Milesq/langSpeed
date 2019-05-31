@@ -1,6 +1,23 @@
 {
+  "name": "langspeed",
+  "description": "Optimal algorithm for testing five prime numbers, written in different languages",
+  "version": "1.0.0",
+  "main": "timer.js",
   "dependencies": {
     "del": "^4.1.1",
     "ncp": "^2.0.0"
-  }
+  },
+  "scripts": {
+    "start": "node timer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milesq/langSpeed.git"
+  },
+  "author": "Milesq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milesq/langSpeed/issues"
+  },
+  "homepage": "https://github.com/Milesq/langSpeed#readme"
 }
