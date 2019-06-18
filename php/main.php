@@ -1,8 +1,8 @@
 <?php
-$is_first = include 'isFirst.php';
+$factorial = include 'factorial.php';
 
 for ($i=__ITERS__;$i>1;--$i) {
-    $is_first($i);
+    $factorial($i);
 }
 
-echo 'php end';
+echo 'end';
