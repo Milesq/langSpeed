@@ -1,10 +1,10 @@
 #include <iostream>
-#include "isFirst.hpp"
+#include "factorial.hpp"
 
 int main ()
 {
 	for (int i=__ITERS__;i>1;--i) {
-		isFirst(i);
+		factorial(i);
 	}
 
 	std::cout << "end";
