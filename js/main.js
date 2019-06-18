@@ -1,7 +1,7 @@
-const isFirst = require('./isFirst');
+const factorial = require('./factorial');
 
 for (let i=__ITERS__;i>1;--i) {
-    isFirst(i);
+    factorial(i);
 }
 
 console.log('end');
