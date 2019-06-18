@@ -1,10 +1,10 @@
-mod is_first;
+mod factorial;
 
-use is_first::*;
+use factorial::*;
 
 fn main() {
     for x in 0..__ITERS__ {
-        is_first(x);
+        factorial(x);
     }
 
     println!("end");
