@@ -1,8 +1,8 @@
-import First.isFirst
+import Factorial.factorial
 
 fun main() {
     for (i in 1..__ITERS__) {
-        isFirst(i)
+        factorial(i)
     }
 
     println("end")
