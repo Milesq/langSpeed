@@ -1,5 +1,5 @@
 <?php
-function factorial(int $number): int {
+function factorial(int $number) {
     if ($number === 2) {
         return 2;
     } else {
@@ -7,4 +7,4 @@ function factorial(int $number): int {
     }
 };
 
-return factorial;
+return 'factorial';

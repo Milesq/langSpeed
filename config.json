@@ -23,12 +23,6 @@
         "main": "main.js"
     },
     {
-        "dir": "kotlin",
-        "compile": "kotlinc Main.kt Factorial.kt",
-        "run": "java MainKt",
-        "main": "Main.kt"
-    },
-    {
         "dir": "php",
         "run": "php main.php",
         "main": "main.php"
