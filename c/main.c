@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "isFirst.h"
+#include "factorial.h"
 
 int main ()
 {
 	for (int i=__ITERS__;i>1;--i) {
-		isFirst(i);
+		factorial(i);
 	}
 
 	printf("end");
