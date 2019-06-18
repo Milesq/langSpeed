@@ -1,13 +1,13 @@
 [
     {
         "dir": "c",
-        "compile": "gcc ./main.c isFirst.h",
+        "compile": "gcc ./main.c factorial.h",
         "run": "a.exe",
         "main": "main.c"
     },
     {
         "dir": "cpp",
-        "compile": "g++ main.cpp isFirst.hpp -std=c++17",
+        "compile": "g++ main.cpp factorial.hpp -std=c++17",
         "run": "a.exe",
         "main": "main.cpp"
     },
@@ -24,7 +24,7 @@
     },
     {
         "dir": "kotlin",
-        "compile": "kotlinc Main.kt First.kt",
+        "compile": "kotlinc Main.kt Factorial.kt",
         "run": "java MainKt",
         "main": "Main.kt"
     },
