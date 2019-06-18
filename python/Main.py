@@ -1,6 +1,6 @@
-from isFirst import isFirst
+from factorial import factorial
 
 for x in range(__ITERS__):
-    isFirst(x)
+    factorial(x)
 
 print('end')
