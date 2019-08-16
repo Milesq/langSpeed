@@ -18,15 +18,16 @@ yarn start 100
 After execute, program will create result.json file
 
 ## langs
-- C
-- C++
-- Java
-- Js
-- PHP 7
-- Python 3
-- Kotlin
-- Rust
 
+-   C
+-   C++
+-   Java
+-   Js
+-   PHP 7
+-   Python 3
+-   Kotlin
+-   Rust
+-   Go
 
 ### Example new language - JavaScript
 
@@ -36,9 +37,8 @@ Step one: Add isFirst algorithm
 
 ```js
 function isFirst(number) {
-    for(let i=2;i <= number / 2;++i) {
-        if (number % i == 0)
-          return false;
+    for (let i = 2; i <= number / 2; ++i) {
+        if (number % i == 0) return false;
     }
 
     return true;
@@ -48,15 +48,15 @@ function isFirst(number) {
 Step two: Add loop with variable number of iterations
 
 ```js
-for (let i=100;i>1;--i) {
+for (let i = 100; i > 1; --i) {
     isFirst(i);
 }
 ```
 
-Step three: Change iterations count to \_\_ITERS__
+Step three: Change iterations count to \_\_ITERS\_\_
 
 ```js
-for (let i=__ITERS__;i>1;--i) {
+for (let i = __ITERS__; i > 1; --i) {
     isFirst(i);
 }
 ```
@@ -69,10 +69,10 @@ Open config.json and add new json object in array.
 
 Possibility configuration:
 
-- dir - required string, directory with your code
+-   dir - required string, directory with your code
 
-- run - required string, command that runs your code
+-   run - required string, command that runs your code
 
-- main - required string, your main file (there is \_\_ITERS__)
+-   main - required string, your main file (there is \_\_ITERS\_\_)
 
-- compile - string, if your code must be compiled this commands should do that
+-   compile - string, if your code must be compiled this commands should do that

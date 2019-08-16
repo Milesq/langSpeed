@@ -43,5 +43,11 @@
         "compile": "cargo build --release",
         "run": "cd target/release && rust.exe",
         "main": "main.rs"
+    },
+    {
+        "dir": "golang",
+        "compile": "go build",
+        "run": "golang",
+        "main": "main.go"
     }
 ]
