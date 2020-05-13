@@ -27,6 +27,7 @@ After execute, program will create result.json file
 -   Python 3
 -   Kotlin
 -   Rust
+-   Julia
 -   Go
 
 ### Example new language - JavaScript
