@@ -2,3 +2,4 @@ node_modules/
 .tmp/
 .vscode/
 results.json
+__pycache__
