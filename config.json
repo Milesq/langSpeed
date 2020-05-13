@@ -29,19 +29,19 @@
         "main": "Main.kt"
     },
     {
-        "dir": "php",
-        "run": "php main.php",
-        "main": "main.php"
+        "dir": "python",
+        "run": "python main.py",
+        "main": "main.py"
     },
     {
-        "dir": "python",
-        "run": "python Main.py",
-        "main": "Main.py"
+        "dir": "julia",
+        "run": "julia main.jl",
+        "main": "main.jl"
     },
     {
         "dir": "rust",
         "compile": "cargo build --release",
-        "run": "cd target/release && rust.exe",
+        "run": ".\\target\\release\\rust.exe",
         "main": "main.rs"
     },
     {
