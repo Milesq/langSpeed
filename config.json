@@ -23,6 +23,11 @@
         "main": "main.js"
     },
     {
+        "dir": "denojs",
+        "run": "deno run main.js",
+        "main": "main.js"
+    },
+    {
         "dir": "kotlin",
         "compile": "kotlinc Main.kt Prime.kt",
         "run": "java MainKt",
