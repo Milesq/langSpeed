@@ -1,6 +1,6 @@
-from isFirst import isFirst
+from isPrime import isPrime
 
 for x in range(__ITERS__):
-    isFirst(x)
+    isPrime(x)
 
 print('end')

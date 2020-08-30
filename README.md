@@ -34,10 +34,10 @@ After execute, program will create result.json file
 
 #### Add code
 
-Step one: Add isFirst algorithm
+Step one: Add isPrime algorithm
 
 ```js
-function isFirst(number) {
+function isPrime(number) {
     for (let i = 2; i <= number / 2; ++i) {
         if (number % i == 0) return false;
     }
@@ -50,7 +50,7 @@ Step two: Add loop with variable number of iterations
 
 ```js
 for (let i = 100; i > 1; --i) {
-    isFirst(i);
+    isPrime(i);
 }
 ```
 
@@ -58,7 +58,7 @@ Step three: Change iterations count to \_\_ITERS\_\_
 
 ```js
 for (let i = __ITERS__; i > 1; --i) {
-    isFirst(i);
+    isPrime(i);
 }
 ```
 

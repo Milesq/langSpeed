@@ -1,7 +1,7 @@
-const isFirst = require("./isFirst");
+const isPrime = require("./isPrime");
 
 for (let i = __ITERS__; i > 1; --i) {
-    isFirst(i);
+    isPrime(i);
 }
 
 console.log("end");

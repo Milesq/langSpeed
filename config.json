@@ -1,5 +1,44 @@
 [
     {
+        "dir": "c",
+        "compile": "gcc ./main.c isPrime.h",
+        "run": "a.exe",
+        "main": "main.c"
+    },
+    {
+        "dir": "cpp",
+        "compile": "g++ main.cpp isPrime.hpp -std=c++17",
+        "run": "a.exe",
+        "main": "main.cpp"
+    },
+    {
+        "dir": "java",
+        "compile": "javac Main.java",
+        "run": "java Main",
+        "main": "Main.java"
+    },
+    {
+        "dir": "js",
+        "run": "node main.js",
+        "main": "main.js"
+    },
+    {
+        "dir": "kotlin",
+        "compile": "kotlinc Main.kt Prime.kt",
+        "run": "java MainKt",
+        "main": "Main.kt"
+    },
+    {
+        "dir": "python",
+        "run": "python main.py",
+        "main": "main.py"
+    },
+    {
+        "dir": "julia",
+        "run": "julia main.jl",
+        "main": "main.jl"
+    },
+    {
         "dir": "rust",
         "compile": "cargo build --release",
         "run": ".\\target\\release\\rust.exe",
@@ -10,5 +49,11 @@
         "compile": "cargo build --release",
         "run": ".\\target\\release\\rust.exe",
         "main": "main.rs"
+    },
+    {
+        "dir": "golang",
+        "compile": "go build",
+        "run": "golang",
+        "main": "main.go"
     }
 ]

@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"./isfirst"
+	"./isprime"
 )
 
 func main() {
 	for i := 0; i < __ITERS__; i++ {
-		isfirst.Isfirst(i)
+		isprime.Isprime(i)
 	}
 
 	fmt.Println("end")

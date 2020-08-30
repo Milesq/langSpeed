@@ -1,9 +1,9 @@
-include("isfirst.jl")
+include("isprime.jl")
 
-using .isFirst
+using .isPrime
 
 for i = 1:__ITERS__
-    isfirst(i)
+    isprime(i)
 end
 
 println("end")

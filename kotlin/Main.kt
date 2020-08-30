@@ -1,8 +1,8 @@
-import First.isFirst
+import Prime.isPrime
 
 fun main() {
     for (i in 1..__ITERS__) {
-        isFirst(i)
+        isPrime(i)
     }
 
     println("end")

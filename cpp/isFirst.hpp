@@ -1,8 +1,10 @@
-#ifndef IS_FIRST
-#define IS_FIRST
+#ifndef IS_PRIME
+#define IS_PRIME
 
-bool isFirst(int number) {
-    for(int i=2;i <= number / 2;++i) {
+bool isPrime(int number)
+{
+    for (int i = 2; i <= number / 2; ++i)
+    {
         if (number % i == 0)
             return false;
     }
@@ -10,4 +12,4 @@ bool isFirst(int number) {
     return true;
 }
 
-#endif // IS_FIRST
+#endif // IS_PRIME

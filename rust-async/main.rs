@@ -1,6 +1,6 @@
-mod is_first;
+mod is_prime;
 
-use is_first::*;
+use is_prime::*;
 use std::thread;
 
 fn main() {
@@ -10,7 +10,7 @@ fn main() {
     for x in 0..__ITERS__ / BY_X {
         v.push(thread::spawn(move || {
             for _ in (x * BY_X)..(x * BY_X + BY_X) {
-                is_first(x);
+                is_prime(x);
             }
         }));
     }
